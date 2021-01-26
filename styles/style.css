@@ -29,7 +29,6 @@ body {
 header {
   display: flex;
   align-items: center;
-
 }
 
 #image-logo {
@@ -112,10 +111,18 @@ main h3 {
   margin: 20px 20px 20px 0;
 }
 
+.card__image img:hover {
+  cursor: pointer;
+}
+
 .card__title {
   font-size: 18px;
   line-height: 21px;
   font-weight: normal;
+}
+
+.card__title p:hover {
+  cursor: pointer;
 }
 
 .card__author p {
@@ -123,6 +130,66 @@ main h3 {
   line-height: 16px;
   color: #777777;
   margin-top: 5px;
+}
+
+/* MODAL ============ */
+.modal-overlay {
+  display: flex;
+  position: fixed;
+  top: 0;
+
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal {
+  width: 660px;
+  height: 413px;
+  margin: auto;
+  border-radius: 16px;
+  background-color: #fff;
+}
+
+.modal .modal-image img {
+  width: 600px;
+  height: 200px;
+  border-radius: 15px;
+  margin: 30px 30px 20px;
+}
+
+.modal .modal-title p {
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+}
+
+.modal .modal-author p {
+  font-size: 18px;
+  line-height: 21px;
+  color: #777777;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.modal .close-modal p {
+  color: #999999;
+  line-height: 19px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.modal .close-modal p:hover {
+  cursor: pointer;
+}
+
+/* MODAL-ACTIVE ============ */
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
 }
 
 /* FOOTER ============ */
