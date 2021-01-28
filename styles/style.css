@@ -115,19 +115,20 @@ main h3 {
   cursor: pointer;
 }
 
-.card__title {
+.card__title h2 {
   font-size: 18px;
   line-height: 21px;
   font-weight: normal;
 }
 
-.card__title p:hover {
+.card__title h2:hover {
   cursor: pointer;
 }
 
-.card__author p {
+.card__author h3 {
   font-size: 14px;
   line-height: 16px;
+  font-weight: normal;
   color: #777777;
   margin-top: 5px;
 }
@@ -161,15 +162,17 @@ main h3 {
   margin: 30px 30px 20px;
 }
 
-.modal .modal-title p {
+.modal .modal-title h2 {
   font-size: 24px;
   line-height: 28px;
   text-align: center;
+  font-weight: normal;
 }
 
-.modal .modal-author p {
+.modal .modal-author h3 {
   font-size: 18px;
   line-height: 21px;
+  font-weight: normal;
   color: #777777;
   text-align: center;
   margin-top: 5px;
